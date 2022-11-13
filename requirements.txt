@@ -7,3 +7,4 @@ plotly
 seaborn
 streamlit==0.62.0
 wordcloud
+pip==21.3.1
