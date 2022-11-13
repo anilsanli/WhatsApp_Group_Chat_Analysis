@@ -25,7 +25,7 @@ if page == "How to Use":
     st.write("""\n""")
     st.write("""Note: To use the application, you must be sure of some formats and follow some steps.""")
     st.write("""To use the application;""")
-    st.write("""1. You have to export the WhatsApp Group Chat""")
+    st.write("""1. You have to export the WhatsApp Group Chat (without media option is preferred)""")
     st.write("""2. You should check the date format on exported text file""")
     st.write("""* If the format is *DD.MM.YYYY HH:MM*, you should choose Format1 from the format button""")
     st.write("""* If the format is *DD/MM/YYYY, HH:MM*, you should choose Format2 from the format button.""")
