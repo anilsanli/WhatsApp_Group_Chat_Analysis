@@ -4,7 +4,6 @@ seaborn
 numpy
 pandas
 altair
-wordcloud
 pandas
 plotly
 pyarrow
