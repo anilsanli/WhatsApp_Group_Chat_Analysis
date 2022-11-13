@@ -390,7 +390,10 @@ def txtToDf_inputpage(chat_file, time_format):
     df["n_words"] = df["message"].str.split().str.len()  # number of words in a message
 
     # format for converting date_time variable to type datetime
-    datetime_format = "%d.%m.%Y %H:%M - "
+    if time_format == "Format1":
+        datetime_format = "%d.%m.%Y %H:%M - "
+    elif time_format == "Format2":
+        datetime_format = "%d/%m/%Y, %H:%M - "
 
     # converting date-time pattern which is of type String to type datetime
     df["date_time"] = pd.to_datetime(df["date_time"], format=datetime_format)  # ex. 2022-09-20 22:10:00
