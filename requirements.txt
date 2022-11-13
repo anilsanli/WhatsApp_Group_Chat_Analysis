@@ -1,10 +1,9 @@
-pip==21.3.1
 streamlit
-altair
 matplotlib
-nltk
+seaborn
 numpy
 pandas
-plotly
-seaborn
+altair
 wordcloud
+pandas
+plotly
