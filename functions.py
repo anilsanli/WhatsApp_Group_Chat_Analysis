@@ -66,7 +66,6 @@ def txtToDf(chat_file, time_format):
 
     # replace links
     df['message'] = df['message'].replace(r'http\S+', '', regex=True).replace(r'www\S+', '', regex=True)
-
     df["len_message"] = df["message"].str.len()  # length of messages (by char)
     df["n_words"] = df["message"].str.split().str.len()  # number of words in a message
 
