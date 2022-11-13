@@ -3,6 +3,7 @@ matplotlib
 seaborn
 numpy
 pandas
+wordcloud
 altair
 pandas
 plotly
