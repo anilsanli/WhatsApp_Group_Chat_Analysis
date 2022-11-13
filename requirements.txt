@@ -7,3 +7,4 @@ altair
 wordcloud
 pandas
 plotly
+pyarrow
