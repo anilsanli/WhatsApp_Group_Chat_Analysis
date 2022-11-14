@@ -114,8 +114,7 @@ def df_general_stats(df, show_print=False):
         df_general_stats(df)
     """
     # count of users
-    n_users = df[
-                  "user"].nunique() - 1  # number of people that messaged the group (including those who left the group) (-1 for group notification)
+    n_users = df["user"].nunique()  # number of people that messaged the group (including those who left the group) (-1 for group notification)
     # list of users
     # user_list = sorted(df["user"].unique().tolist())
     # total number of messages
