@@ -5,8 +5,6 @@
  - You can access the project by clicking the link: https://whatsapp-group-chat-analysis.herokuapp.com
  - And you can reach me on LinkedIn: https://www.linkedin.com/in/anilsanli/
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6997486512695046144" height="650" width="504" frameborder="0" allowfullscreen="" title="Gömülü gönderi"></iframe>
-
 ## Code Files
 
  - app.py: main file of application
