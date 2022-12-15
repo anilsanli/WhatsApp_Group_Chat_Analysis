@@ -189,12 +189,14 @@ elif page == "Do Your Own Analysis":
     st.markdown("<h2 style='text-align:center;'>Do Your Own Analysis</h2>", unsafe_allow_html=True)
 
     uploaded_file = st.sidebar.file_uploader("Upload a group chat txt file:", accept_multiple_files=False)
-    selected_format = st.sidebar.selectbox('What is the date format?', ('DD.MM.YYYY HH:MM', 'DD/MM/YYYY, HH:MM'))
+    selected_format = st.sidebar.selectbox('What is the date format?', ('DD.MM.YYYY HH:MM', 'DD/MM/YYYY, HH:MM', '[DD.MM.YYYY HH:MM:SS]'))
 
     if selected_format == 'DD.MM.YYYY HH:MM':
         time_format = "Format1"
     elif selected_format == 'DD/MM/YYYY, HH:MM':
         time_format = "Format2"
+    elif selected_format == "[DD.MM.YYYY HH:MM:SS]":
+        time_format = "Format3"
 
     if uploaded_file is not None:
         # To read file as bytes:

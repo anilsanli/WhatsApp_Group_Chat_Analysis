@@ -353,7 +353,8 @@ def txtToDf_inputpage(chat_file, time_format):
     # Depending on date format of exported txt file
     split_formats = {
         "Format1": "\d{1,2}.\d{1,2}.\d{2,4}\s\d{1,2}:\d{2}\s-\s",  # DD.MM.YYYY HH:MM
-        "Format2": "\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s"  # DD/MM/YYYY, HH:MM
+        "Format2": "\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s",  # DD/MM/YYYY, HH:MM
+        "Format3": "\[\d{1,2}.\d{1,2}.\d{2,4}\s\d{1,2}:\d{2}:\d{2}\]\s" #[DD.MM.YYYY, HH:MM:SS]
     }
 
 
@@ -393,6 +394,8 @@ def txtToDf_inputpage(chat_file, time_format):
         datetime_format = "%d.%m.%Y %H:%M - "
     elif time_format == "Format2":
         datetime_format = "%d/%m/%Y, %H:%M - "
+    elif time_format == "Format3":
+        datetime_format = "[%d.%m.%Y %H:%M:%S] "
 
     # converting date-time pattern which is of type String to type datetime
     df["date_time"] = pd.to_datetime(df["date_time"], format=datetime_format)  # ex. 2022-09-20 22:10:00
