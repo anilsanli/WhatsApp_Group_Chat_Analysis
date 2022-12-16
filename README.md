@@ -1,5 +1,8 @@
 # WhatsApp Chat Analysis Project & Interface
 
+Update: Turkish Language option is added.
+Güncelleme: Türkçe dil seçeneği eklenmiştir.
+
  - The project was created for the analysis of individual and group chats in the WhatsApp application.
  - The project is written in Python. Uploaded to the virtual world via Streamlit and Heroku.
  - You can access the project by clicking the link: https://whatsapp-group-chat-analysis.herokuapp.com
